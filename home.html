@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="home_css.css">
+</head>
+<body>
+    <div class="bg-img"></div>
+    <form class="login-box">
+        <h1>LOGIN</h1>
+        <div class="email-box input_box">
+            <input type="text" id="email" required>
+            <label for="email">E-mail</label>
+        </div>
+        <div class="p-box test input_box">
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+        </div>
+        <div class="btn-box">
+            <input type="submit" value="로그인" class="login-btn" href="join.html">
+            <p>아직 회원이 아니신가요?</p>
+            <input type="button" value="회원가입" class="join_btn" onclick="window.open('join.html')">
+        </div>
+    </form>
+<script src="home.js"></script>
+</body>
+</html> 

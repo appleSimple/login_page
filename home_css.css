@@ -1,0 +1,107 @@
+/* 초기화 */
+*{
+    margin:0;
+    padding:0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+/* 배경화면 */
+.bg-img{
+    background: url(img/ari.jpg) no-repeat center/ cover;
+    height: 102%;
+    width: 102%;
+    position: relative;
+    filter:blur(10px);
+}
+
+/* 로그인창 */
+.login-box{
+    background-color: rgba(255, 255,255, 0.8);
+    width: 400px;
+    height: 600px;
+    left: 50%;
+    position: absolute;
+    top: 25%;
+    margin-left: -200px;
+    border-radius: 20px;
+}
+
+.login-box h1{
+    text-align: center;
+    padding:60px;
+    font-size:3em;
+}
+.login-box label, .login-box input{
+    display: block;
+    background-color: rgba(255, 255,255, 0);
+}
+.email-box, .p-box{
+    padding:15px;
+    position: relative;
+}
+.input_box label{
+    color:black;
+    margin-bottom: 10px;
+    position: absolute;
+    top:15px;
+    left:35px;
+}
+.input_box input{
+    border:none;
+    border-bottom: 2px solid grey;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.05em;
+    line-height: 1.5;
+    display: block;
+}
+
+/* 로그인 버튼 */
+.btn-box{
+    padding-top: 1.5em;
+}
+.btn-box .login-btn, .btn-box .join_btn{
+    background-color: white;
+    width: 86%;;
+    padding:15px;
+    height: 55px;
+    position: relative;
+    left:7%;
+    border-radius: 5px;
+    border:none;
+    cursor:pointer;
+    outline: none;
+}
+.btn-box .login-btn:hover, .btn-box .join_btn:hover{
+    background-color: rgb(255, 202, 211);
+}
+
+.btn-box p{
+    text-align: center;
+    padding-top:3.5em;
+    padding-bottom: 0.5em;
+    font-size: 0.9em;
+}
+
+/* 라벨 애니메이션 */
+.input_box input:focus,
+.input_box input:valid{
+    border-bottom-color: pink;
+    outline:none;
+}
+.input_box label span{
+    display: inline-block;
+    min-width: 5px;
+    transition: all 0.3s cubic-bezier(0.68, 0.55, 0.265, 1.55);
+}
+  
+.input_box input:focus + label span,
+.input_box input:valid + label span{
+    color: pink;
+    transform: translateY(-25px);
+}
