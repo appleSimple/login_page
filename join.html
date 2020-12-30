@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+    <div class="bg-img"></div>
+    <form class="join-box">
+        <h1>JOIN US</h1>
+        <input type="text" id="user-id" placeholder="ID" class="texts">
+        <button type="button">중복확인</button>
+        <h4 class="okay dis-none">사용가능한 아이디입니다.</h4>
+        <h4 class="nope dis-none">이미 사용중인 아이디입니다.</h4>
+        <input type="password" id="password" placeholder="password" class="texts">
+        <input type="password" id="check-pass" placeholder="check password" class="texts">
+        <h4 class="same dis-none">비밀번호가 일치합니다.</h4>
+        <h4 class="differ dis-none">비밀번호가 일치하지 않습니다.</h4>
+        <input type="text" id="email" placeholder="E-mail" class="texts">
+        <input type="submit" id="join" value="JOIN">
+        <p>이미 회원이라면?  <a href="home.html">로그인</a></p>
+    </form>
+
+<script src="join.js"></script>
+</body>
+</html>
